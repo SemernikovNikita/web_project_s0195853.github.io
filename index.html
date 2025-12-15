@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drupal-coder - Поддержка и разработка Drupal сайтов</title>
+    <!-- ИП: Добавлена ссылка на CSS файл -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ИП: Добавлен favicon для лучшего UX -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+    <!-- ИП: Добавлен видео-бэкграунд в header как требуется по проекту -->
     <header>
+        <div class="video-background">
+            <video autoplay muted loop id="headerVideo">
+                <source src="video.mp4" type="video/mp4">
+                <!-- ИП: Фолбэк для браузеров, не поддерживающих видео -->
+                <div class="video-fallback"></div>
+            </video>
+        </div>
+        
         <div class="container">
             <div class="header-top">
                 <div class="logo-section">
@@ -15,50 +28,49 @@
                     </div>
                 </div>
 
-            <nav class="main-nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#header-main">ПОДДЕРЖКА DRUPAL</a></li>
-                    <li class="nav-item">АДМИНИСТРИРОВАНИЕ</li>
-                    <li class="nav-item">МИГРАЦИЯ</li>
-                    <li class="nav-item">БЭКАПЫ</li>
-                    <li class="nav-item">АУДИТ БЕЗОПАСНОСТИ</li>
-                    <li class="nav-item">ОПТИМИЗАЦИЯ СКОРОСТИ</li>
-                    <li class="nav-item">ПЕРЕЕЗД НА HTTPS</li>
-                    <li class="nav-item">ПРОДВИЖЕНИЕ</li>
-                    <li class="nav-item">РЕКЛАМА</li>
-                    <li class="nav-item">О НАС</li>
-                    <li class="nav-item"><a href="#team">КОМАНДА</a></li>
-                    <li class="nav-item">DRUPALGIVE</li>
-                    <li class="nav-item">БЛОГ</li>
-                    <li class="nav-item">КУРСЫ DRUPAL</li>
-                    <li class="nav-item"><a href="#projects">ПРОЕКТЫ</a></li>
-                    <li class="nav-item"><a href="#contacts">КОНТАКТЫ</a></li>
-                </ul>
-            </nav>
-        </div>
+                <!-- ИП: Исправлена структура навигации - добавлен закрывающий div -->
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#header-main">ПОДДЕРЖКА DRUPAL</a></li>
+                        <li class="nav-item">АДМИНИСТРИРОВАНИЕ</li>
+                        <li class="nav-item">МИГРАЦИЯ</li>
+                        <li class="nav-item">БЭКАПЫ</li>
+                        <li class="nav-item">АУДИТ БЕЗОПАСНОСТИ</li>
+                        <li class="nav-item">ОПТИМИЗАЦИЯ СКОРОСТИ</li>
+                        <li class="nav-item">ПЕРЕЕЗД НА HTTPS</li>
+                        <li class="nav-item">ПРОДВИЖЕНИЕ</li>
+                        <li class="nav-item">РЕКЛАМА</li>
+                        <li class="nav-item">О НАС</li>
+                        <li class="nav-item"><a href="#team">КОМАНДА</a></li>
+                        <li class="nav-item">DRUPALGIVE</li>
+                        <li class="nav-item">БЛОГ</li>
+                        <li class="nav-item">КУРСЫ DRUPAL</li>
+                        <li class="nav-item"><a href="#projects">ПРОЕКТЫ</a></li>
+                        <li class="nav-item"><a href="#contacts">КОНТАКТЫ</a></li>
+                    </ul>
+                </nav>
+            </div> <!-- ИП: Закрыт div.header-top -->
 
-        <div class="header-contact">
-            <h3 id="header-main">Поддержка сайтов на Drupal</h3>
-            <p>Сопровождение и поддержка сайтов на CMS Drupal любых версий и запущенности</p>
-            <a href="tarrifs">Тарифы</a>
-        </div>
+            <div class="header-contact">
+                <h3 id="header-main">Поддержка сайтов на Drupal</h3>
+                <p>Сопровождение и поддержка сайтов на CMS Drupal любых версий и запущенности</p>
+                <a href="#tarrifs">Тарифы</a>
+            </div>
 
-        <div class="header-topics">
-            <p class="ht">#1</p>
-            <p class="htt">Drupal-разработчик в России по версии рейтинга Рунета</p>
-            <p class="ht">3+</p>
-            <p class="htt">средний опыт специалистов более 3 лет</p>
-            <p class="ht">14</p>
-            <p class="htt">лет опыта в сфере Drupal</p>
-            <p class="ht">50+</p>
-            <p class="htt">модулей в формате DrupalGive</p>
-            <p class="ht">90 000+</p>
-            <p class="htt">часов поддержки сайтов на Drupal</p>
-            <p class="ht">300+</p>
-            <p class="htt">проектов на поддержании</p>
-        </div> 
-            
-
+            <div class="header-topics">
+                <p class="ht">#1</p>
+                <p class="htt">Drupal-разработчик в России по версии рейтинга Рунета</p>
+                <p class="ht">3+</p>
+                <p class="htt">средний опыт специалистов более 3 лет</p>
+                <p class="ht">14</p>
+                <p class="htt">лет опыта в сфере Drupal</p>
+                <p class="ht">50+</p>
+                <p class="htt">модулей в формате DrupalGive</p>
+                <p class="ht">90 000+</p>
+                <p class="htt">часов поддержки сайтов на Drupal</p>
+                <p class="ht">300+</p>
+                <p class="htt">проектов на поддержании</p>
+            </div> 
         </div>
     </header>
 
@@ -107,12 +119,12 @@
                         <p>Ваш менеджер проекта всегда в курсе текущего состояния проекта и в любой момент готов ответить на любые вопросы.</p>
                     </div>
                     <div class="feature">
-                        <div class="feature">
-                            <div class="feature-number">05</div>
-                            <h3>Удобные способы оплаты</h3>
-                            <p>Безналичный расчет по договору или электронные деньги: WebMoney, Яндекс.Деньги, Paypal.</p>
-                        </div>
-                    <div class="feature-number">06</div>
+                        <div class="feature-number">05</div>
+                        <h3>Удобные способы оплаты</h3>
+                        <p>Безналичный расчет по договору или электронные деньги: WebMoney, Яндекс.Деньги, Paypal.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-number">06</div>
                         <h3>Работаем с SLA и NDA</h3>
                         <p>Работа в рамках соглашений о конфиденциальности и об уровне качества работ.</p>
                     </div>
@@ -179,7 +191,7 @@
                 </div>
                 
                 <div class="cta">
-                    <p>Вам не подходят наши тарифы? Остаьвте заявку и мы предложим вам индивидуальные условия</p>
+                    <p>Вам не подходят наши тарифы? Оставьте заявку и мы предложим вам индивидуальные условия</p>
                     <h3>Свяжитесь с нами!</h3>
                     <p>Получить индивидуальный тариф</p>
                     <p>Наши профессиональные разработчики выполнят быстро любые задачи</p>
@@ -269,10 +281,11 @@
                 <h3 id="projects">С нами работают</h3>
                 <p>Десятки компаний доверяют нам самое ценное, что у них есть в интернете - свои сайты. Мы делаем все, чтобы наше сотрудничество было долгим.</p>
                 <div class="client-logos">
-                    <!-- Здесь будут логотипы клиентов -->
-                    <div class="logo-placeholder">Логотип клиента</div>
-                    <div class="logo-placeholder">Логотип клиента</div>
-                    <div class="logo-placeholder">Логотип клиента</div>
+                    <!-- ИП: Добавлены логотипы клиентов как указано в макете -->
+                    <div class="logo-placeholder">Логотип клиента 1</div>
+                    <div class="logo-placeholder">Логотип клиента 2</div>
+                    <div class="logo-placeholder">Логотип клиента 3</div>
+                    <div class="logo-placeholder">Логотип клиента 4</div>
                 </div>
             </div>
         </section>
@@ -280,7 +293,7 @@
         <section class="technologies">
             <div class="container">
                 <div class="tech-icons">
-                    <!-- Иконки технологий -->
+                    <!-- ИП: Иконки технологий из макета -->
                     <div class="tech-icon">SCANNING</div>
                     <div class="tech-icon">MEASUREMENT</div>
                     <div class="tech-icon">AUTOMATION</div>
@@ -342,49 +355,54 @@
                     <p>Срочно нужна поддержка сайта? Ваша команда не успевает справиться самостоятельно или предыдущий подрядчик не справился с работой? Тогда вам точно к нам! Просто оставьте заявку и наш менеджер с вами свяжется!</p>
                     <p>8 800 222-26-73</p>
                     <p>info@drupal-coder.ru</p>
-                </div>
-
-                <div class="popup-content">
-                <button class="close-btn" id="closeFormBtn">&times;</button>
                     
-                <h2 class="form-title">Форма обратной связи</h2>
+                    <!-- ИП: Кнопка для открытия формы -->
+                    <button id="openFormBtn" class="btn-submit">Связаться с нами</button>
+                </div>
+
+                <!-- ИП: Модальное окно формы -->
+                <div class="popup-content" id="popupForm">
+                    <button class="close-btn" id="closeFormBtn">&times;</button>
                     
-                <div class="message success" id="successMessage">
-                    Ваше сообщение успешно отправлено!
+                    <h2 class="form-title">Форма обратной связи</h2>
+                    
+                    <div class="message success" id="successMessage">
+                        Ваше сообщение успешно отправлено!
+                    </div>
+
+                    <div class="message error" id="errorMessage">
+                        Произошла ошибка при отправке. Пожалуйста, попробуйте еще раз.
+                    </div>
+
+                    <form id="feedbackForm">
+                        <div class="form-group">
+                            <label for="fullName">Ваше имя</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Ваш комментарий</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+                            <label for="privacyPolicy">Я согласен с <a href="#" target="_blank">политикой обработки персональных данных</a> *</label>
+                        </div>
+
+                        <button type="submit" class="btn-submit" id="submitBtn">Отправить заявку</button>
+                    </form>
                 </div>
-
-                <div class="message error" id="errorMessage">
-                    Произошла ошибка при отправке. Пожалуйста, попробуйте еще раз.
-                </div>
-
-                <form id="feedbackForm">
-                    <div class="form-group">
-                        <label for="fullName">Ваше имя</label>
-                        <input type="text" id="fullName" name="fullName" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone">Телефон</label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Ваш комментарий</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
-                        <label for="privacyPolicy">Я согласен с <a href="#" target="_blank">политикой обработки персональных данных</a> *</label>
-                    </div>
-
-                    <button type="submit" class="btn-submit" id="submitBtn">Свяжитесь с нами</button>
-                </form>
             </div>
         </section>
     </main>
@@ -397,5 +415,24 @@
             </div>
         </div>
     </footer>
+
+    <!-- ИП: Добавлен базовый JavaScript для работы формы -->
+    <script>
+        // Открытие/закрытие модального окна формы
+        document.getElementById('openFormBtn').addEventListener('click', function() {
+            document.getElementById('popupForm').style.display = 'block';
+        });
+        
+        document.getElementById('closeFormBtn').addEventListener('click', function() {
+            document.getElementById('popupForm').style.display = 'none';
+        });
+        
+        // Закрытие по клику вне формы
+        window.addEventListener('click', function(event) {
+            if (event.target === document.getElementById('popupForm')) {
+                document.getElementById('popupForm').style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
