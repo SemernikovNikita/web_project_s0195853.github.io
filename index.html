@@ -3,436 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drupal-coder - Поддержка и разработка Drupal сайтов</title>
-    <!-- ИП: Добавлена ссылка на CSS файл -->
+    <title>LunaFlora - Цветы в темноте</title>
     <link rel="stylesheet" href="style.css">
-    <!-- ИП: Добавлен favicon для лучшего UX -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="script.js"></script>
 </head>
 <body>
-    <!-- ИП: Добавлен видео-бэкграунд в header как требуется по проекту -->
-    <header>
-        <div class="video-background">
-            <video autoplay muted loop id="headerVideo">
-                <source src="video.mp4" type="video/mp4">
-                <!-- ИП: Фолбэк для браузеров, не поддерживающих видео -->
-                <div class="video-fallback"></div>
-            </video>
-        </div>
-        
-        <div class="container">
-            <div class="header-top">
-                <div class="logo-section">
-                    <div class="logo">
-                        <span class="logo-text">Drupal-coder</span>
-                    </div>
-                </div>
-
-                <!-- ИП: Исправлена структура навигации - добавлен закрывающий div -->
-                <nav class="main-nav">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="#header-main">ПОДДЕРЖКА DRUPAL</a></li>
-                        <li class="nav-item">АДМИНИСТРИРОВАНИЕ</li>
-                        <li class="nav-item">МИГРАЦИЯ</li>
-                        <li class="nav-item">БЭКАПЫ</li>
-                        <li class="nav-item">АУДИТ БЕЗОПАСНОСТИ</li>
-                        <li class="nav-item">ОПТИМИЗАЦИЯ СКОРОСТИ</li>
-                        <li class="nav-item">ПЕРЕЕЗД НА HTTPS</li>
-                        <li class="nav-item">ПРОДВИЖЕНИЕ</li>
-                        <li class="nav-item">РЕКЛАМА</li>
-                        <li class="nav-item">О НАС</li>
-                        <li class="nav-item"><a href="#team">КОМАНДА</a></li>
-                        <li class="nav-item">DRUPALGIVE</li>
-                        <li class="nav-item">БЛОГ</li>
-                        <li class="nav-item">КУРСЫ DRUPAL</li>
-                        <li class="nav-item"><a href="#projects">ПРОЕКТЫ</a></li>
-                        <li class="nav-item"><a href="#contacts">КОНТАКТЫ</a></li>
-                    </ul>
-                </nav>
-            </div> <!-- ИП: Закрыт div.header-top -->
-
-            <div class="header-contact">
-                <h3 id="header-main">Поддержка сайтов на Drupal</h3>
-                <p>Сопровождение и поддержка сайтов на CMS Drupal любых версий и запущенности</p>
-                <a href="#tarrifs">Тарифы</a>
-            </div>
-
-            <div class="header-topics">
-                <p class="ht">#1</p>
-                <p class="htt">Drupal-разработчик в России по версии рейтинга Рунета</p>
-                <p class="ht">3+</p>
-                <p class="htt">средний опыт специалистов более 3 лет</p>
-                <p class="ht">14</p>
-                <p class="htt">лет опыта в сфере Drupal</p>
-                <p class="ht">50+</p>
-                <p class="htt">модулей в формате DrupalGive</p>
-                <p class="ht">90 000+</p>
-                <p class="htt">часов поддержки сайтов на Drupal</p>
-                <p class="ht">300+</p>
-                <p class="htt">проектов на поддержании</p>
-            </div> 
+    <!-- Шапка с меню -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-moon"></i> <span>LunaFlora</span>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                
+            </button>
+            
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#catalog">Коллекция</a></li>
+                    <li><a href="#contact">Заказ</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h1>13 лет совершенствуем компетенции в Drupal поддержке!</h1>
-                <p>Разрабатываем и оптимизируем модули, расширяем функциональность сайтов, обновляем дизайн</p>
-                
-                <div class="services-grid">
-                    <div class="service-card">Добавление информации на сайт, создание новых разделов</div>
-                    <div class="service-card">Разработка и оптимизация модулей сайта</div>
-                    <div class="service-card">Интеграция с CRM, 1С, платежными системами и любыми веб-сервисами</div>
-                    <div class="service-card">Любые доработки функционала и дизайна</div>
-                    <div class="service-card">Аудит и мониторинг безопасности Drupal сайтов</div>
-                    <div class="service-card">Миграция, импорт контента и апгрейд Drupal</div>
-                    <div class="service-card">Оптимизация и ускорение Drupal-сайтов</div>
-                    <div class="service-card">Веб-маркетинг, консультации и работы по SEO</div>
+    <!-- Герой с видео -->
+    <section class="hero" id="home">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="pv.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+        <div class="hero-overlay"></div>
+        
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1>Цветы, которые сияют в темноте</h1>
+                <p>Эксклюзивные букеты, созданные для особых моментов. Доставка, индивидуальный подход и цветы, которые запомнятся навсегда.</p>
+                <div class="hero-btns">
+                    <a href="#catalog" class="btn">Исследовать коллекцию</a>
+                    <a href="#contact" class="btn btn-outline">Заказать консультацию</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="support-features">
-            <div class="container">
-                <h2>Поддержка от Drupal-coder</h2>
-                
-                <div class="features-grid">
-                    <div class="feature">
-                        <div class="feature-number">01</div>
-                        <h3>Постановка задачи по Email</h3>
-                        <p>Удобная и привычная модель постановки задач, при которой задачи фиксируются и никогда не теряются.</p>
+    <!-- Слайдер с фотографиями -->
+    <section class="slider-section" id="catalog">
+        <div class="container">
+            <div class="section-title">
+                <h2>Ночная коллекция</h2>
+                <p>Цветы, которые раскрывают свою красоту при лунном свете. Эксклюзивные композиции для романтических вечеров.</p>
+            </div>
+            
+            <div class="slider-container">
+                <div class="slider" id="slider">
+                    <div class="slide">
+                        <img src="p1.jpg" alt="Ночные розы">
+                        <div class="slide-overlay">
+                            <div class="slide-caption">
+                                <h3>Лунные розы</h3>
+                                <a href="#contact" class="btn">Заказать</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="feature">
-                        <div class="feature-number">02</div>
-                        <h3>Система Helpdesk - отчетность, прозрачность</h3>
-                        <p>Возможность посмотреть все заявки в работе и отработанные часы в личном кабинете через браузер.</p>
+                    <div class="slide">
+                        <img src="p2.jpg" alt="Ночной букет">
+                        <div class="slide-overlay">
+                            <div class="slide-caption">
+                                <h3>Полуночный сад</h3>
+                                <a href="#contact" class="btn">Заказать</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="feature">
-                        <div class="feature-number">03</div>
-                        <h3>Расширенная техническая поддержка</h3>
-                        <p>Возможность организации расширенной техподдержки с 6:00 до 22:00 без выходных.</p>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-number">04</div>
-                        <h3>Персональный менеджер проекта</h3>
-                        <p>Ваш менеджер проекта всегда в курсе текущего состояния проекта и в любой момент готов ответить на любые вопросы.</p>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-number">05</div>
-                        <h3>Удобные способы оплаты</h3>
-                        <p>Безналичный расчет по договору или электронные деньги: WebMoney, Яндекс.Деньги, Paypal.</p>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-number">06</div>
-                        <h3>Работаем с SLA и NDA</h3>
-                        <p>Работа в рамках соглашений о конфиденциальности и об уровне качества работ.</p>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-number">07</div>
-                        <h3>Надежные штатные специалисты</h3>
-                        <p>Надежные штатные специалисты, никаких фрилансеров.</p>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-number">08</div>
-                        <h3>Удобные каналы связи</h3>
-                        <p>Консультации по телефону, скайпу, в мессенджерах.</p>
+                    <div class="slide">
+                        <img src="p3.jpg" alt="Экзотический ночной букет">
+                        <div class="slide-overlay">
+                            <div class="slide-caption">
+                                <h3>Сияние ночи</h3>
+                                <a href="#contact" class="btn">Заказать</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="expertise">
-                    <h3>Экспертиза в Drupal, опыт 14 лет!</h3>
-                    <p>Только системный подход - контроль версий, резервирование и тестирование!</p>
-                    <p>Только Drupal сайты, не берем на поддержку сайты на других CMS</p>
-                    <p>Участвуем в разработке ядра Drupal и модулей не Drupal.org разрабатываем свои модули Drupal</p>
-                    <p>Поддерживаем сайты на Drupal 5,6,7 и 8</p>
+                <div class="slider-nav">
+                    <button class="slider-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                
+                <div class="slider-dots" id="sliderDots">
+                    <!-- Точки будут добавлены через JS -->
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="tariffs">
-            <div class="container">
-                <div class="tariffs-grid" id="tarrifs">
-                    <div class="tariff">
-                        <h3>Стартовый</h3>
-                        <ul>
-                            <li>Консультации и работы по SEO</li>
-                            <li>Услуги дизайнера</li>
-                            <li>Неиспользованные оплаченные часы переносятся на следующий месяц</li>
-                            <li>Предоплата от 6 000 рублей в месяц</li>
-                        </ul>
-                        <a href="#feedbackForm">Свяжитесь с нами</a>
-                    </div>
+
+    <!-- Форма обратной связи -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Заказать букет</h2>
+                <p>Мы работаем с 8:00 до 20:00</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Доставка</h3>
+                    <p>Наши курьеры доставят букет точно в указанное время, не нарушая атмосферу вечера.</p>
                     
-                    <div class="tariff">
-                        <h3>Бизнес</h3>
-                        <ul>
-                            <li>Консультации и работы по SEO</li>
-                            <li>Услуги дизайнера</li>
-                            <li>Максимальное время реакции - до 2 рабочих дней</li>
-                            <li>Неиспользованные оплаченные часы не переносятся</li>
-                            <li>Предоплата от 30 000 рублей в месяц</li>
-                        </ul>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div>
+                                <h4>Время работы</h4>
+                                <p>8:00 - 20:00</p>
+                            </div>
+                        </div>
                         
-                        <a href="#feedbackForm">Свяжитесь с нами</a>
-                    </div>
-                    
-                    <div class="tariff">
-                        <h3>VIP</h3>
-                        <ul>
-                            <li>Консультации и работы по SEO</li>
-                            <li>Услуги дизайнера</li>
-                            <li>Максимальное время реакции - в день обращения</li>
-                            <li>Неиспользованные оплаченные часы НЕ ПЕРЕНОСЯТСЯ</li>
-                            <li>Предоплата от 270 000 рублей в месяц</li>
-                        </ul>
-                        <a href="#feedbackForm">Свяжитесь с нами</a>
-                    </div>
-                </div>
-                
-                <div class="cta">
-                    <p>Вам не подходят наши тарифы? Оставьте заявку и мы предложим вам индивидуальные условия</p>
-                    <h3>Свяжитесь с нами!</h3>
-                    <p>Получить индивидуальный тариф</p>
-                    <p>Наши профессиональные разработчики выполнят быстро любые задачи</p>
-                </div>
-                
-                <div class="services-examples">
-                    <div class="example">
-                        <div class="price">от 1ч</div>
-                        <p>Настройка события GA в интернет-магазине</p>
-                    </div>
-                    <div class="example">
-                        <div class="price">от 20ч</div>
-                        <p>Разработка мобильной версии сайта</p>
-                    </div>
-                    <div class="example">
-                        <div class="price">от 8ч</div>
-                        <p>Интеграция модуля оплаты</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="team">
-            <div class="container">
-                <h2 id="team">Команда</h2>
-                <div class="team-grid">
-                    <div class="team-member">
-                        <h4>Сергей Синица</h4>
-                        <p>Руководитель отдела веб-разработки, канд. техн. наук, заместитель директора</p>
-                    </div>
-                    <div class="team-member">
-                        <h4>Роман Агабеков</h4>
-                        <p>Руководитель отдела DevOps, директор</p>
-                    </div>
-                    <div class="team-member">
-                        <h4>Алексей Синица</h4>
-                        <p>Руководитель отдела поддержки сайтов</p>
-                    </div>
-                    <div class="team-member">
-                        <h4>Дарья Бочкарева</h4>
-                        <p>Руководитель отдела продвижения, контекстной рекламы и контент-поддержки сайтов</p>
-                    </div>
-                    <div class="team-member">
-                        <h4>Ирина Торкунова</h4>
-                        <p>Менеджер по работе с клиентами</p>
-                    </div>
-                </div>
-                <div class="team-cta">
-                    <p>Вся команда</p>
-                    <p>Последние кейсы</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="case-studies">
-            <div class="container">
-                <div class="case">
-                    <h3>Настройка кэширования данных. Апгрейд сервера. Ускорение работы сайта в 30 раз!</h3>
-                    <p>Пользование отчетами в Яндекс.Метрике влияние скорости загрузки страниц сайта на отказы и конверсии. Кейс ускорения...</p>
-                </div>
-                <div class="case">
-                    <h3>Обмен товарами и заказами интернет-магазинов на Drupal 7 с 1С: Предприятие, МойСклад, Класс365</h3>
-                </div>
-                <div class="case">
-                    <h3>Повышение конверсии страницы с формой с помощью тестирования</h3>
-                </div>
-                <div class="case">
-                    <h3>Drupal 7: ускорение времени генерации страницы интернет-магазина на 329%</h3>
-                    <p>Опубликован релиз модуля...</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="testimonial">
-            <div class="container">
-                <div class="testimonial-content">
-                    <h3>Отзывы</h3>
-                    <p>Долгое время пользовался услугами единственного и неповторимого мастера на многостраничный сайт www.cielparfum.com, который был собран крайне некомпетентным программистом и раз в месяц стабильно грозил погибнуть приводя меня на сайт 4. В итоге, к ребятам из Drupal-coder. И вот уже практические полгода как не проходит и дня, чтобы я не пользовался или не радовался своему великолепному магазинчику...</p>
-                    <p>Провели редизайн - не отошел от желаемого, но со своими существенными и качественными дополнениями. Осуществили ряд проектов - конкурсные тестирования и т.д. А уж мелких доработок и поправок - не счесть! И главное - все качественно и быстро (не взирая на не самый "быстрый" тариф). Есть вопросы - замечательный Алексей всегда подскажет поддержку или отремонтирует или просто сделает с нуля. Есть задумка для реализации - замечательный Сергей обсудит или предложит идеальный вариант. Есть проблема - замечательные Надежда и Роман помогут или подправят сделают! Ребята показали, что эта CMS - мощная и грамотная система управления. Надеюсь что наше сотрудничество затянется надолго! Спасибо!</p>
-                    <p>http://www.cielparfum.com</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="clients">
-            <div class="container">
-                <h3 id="projects">С нами работают</h3>
-                <p>Десятки компаний доверяют нам самое ценное, что у них есть в интернете - свои сайты. Мы делаем все, чтобы наше сотрудничество было долгим.</p>
-                <div class="client-logos">
-                    <!-- ИП: Добавлены логотипы клиентов как указано в макете -->
-                    <div class="logo-placeholder">Логотип клиента 1</div>
-                    <div class="logo-placeholder">Логотип клиента 2</div>
-                    <div class="logo-placeholder">Логотип клиента 3</div>
-                    <div class="logo-placeholder">Логотип клиента 4</div>
-                </div>
-            </div>
-        </section>
-
-        <section class="technologies">
-            <div class="container">
-                <div class="tech-icons">
-                    <!-- ИП: Иконки технологий из макета -->
-                    <div class="tech-icon">SCANNING</div>
-                    <div class="tech-icon">MEASUREMENT</div>
-                    <div class="tech-icon">AUTOMATION</div>
-                    <div class="tech-icon">ARMSC</div>
-                </div>
-                <div class="tech-stats">
-                    <div class="stat">Всё сканируется</div>
-                    <div class="stat">Зафиксировано</div>
-                    <div class="stat">Моя CMS: Drupal</div>
-                </div>
-            </div>
-        </section>
-
-        <section class="faq">
-            <div class="container">
-                <h2>FAQ</h2>
-                <div class="faq-list">
-                    <div class="faq-item">
-                        <h4>1. Кто непосредственно занимается поддержкой?</h4>
-                        <p>Сайты поддерживают штатные сотрудники ООО "Инжиниринг" г. Краснодар, прошедшие специальное обучение и имеющие опыт работы с Drupal от 4 до 15 лет: 8 веб-разработчиков, 2 специалиста по SEO, 4 системных администратора.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h4>2. Как организована работа поддержки?</h4>
-                    </div>
-                    <div class="faq-item">
-                        <h4>3. Что происходит когда отработаны все предусмотренные часы за месяц?</h4>
-                    </div>
-                    <div class="faq-item">
-                        <h4>4. Что происходит когда не отработаны все предусмотренные часы за месяц?</h4>
-                    </div>
-                    <div class="faq-item">
-                        <h4>5. Как происходит оценка и согласование планируемого времени на выполнение заявок?</h4>
-                    </div>
-                    <div class="faq-item">
-                        <h4>6. Сколько программистов выделяется на проект?</h4>
-                    </div>
-                    <div class="faq-item">
-                        <h4>7. Как подать заявку на внесение изменений на сайте?</h4>
-                    </div>
-                    <div class="faq-item">
-                        <h4>8. Как подать заявку на добавление пользователя, изменение настроек веб-сервера и других задач по администрированию?</h4>
-                    </div>
-                    <div class="faq-item">
-                        <h4>9. В течение какого времени начинается работа по заявке?</h4>
-                    </div>
-                    <div class="faq-item">
-                        <h4>10. В какое время работает поддержка?</h4>
-                    </div>
-                    <div class="faq-item">
-                        <h4>11. Подходят ли услуги поддержки если необходимо произвести обновление ядра Drupal или модулей?</h4>
-                    </div>
-                    <div class="faq-item">
-                        <h4>12. Можно ли пообщаться со специалистом голосом или в мессенджере?</h4>
+                        <div class="contact-item">
+                            <div>
+                                <h4>Телефон</h4>
+                                <p>+7 (000) 000-00-00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div>
+                                <p>ул. Какая-то, 1, Краснодар</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="contact-form">
-                    <h3 id="contacts">Оставить заявку на поддержку сайта</h3>
-                    <p>Срочно нужна поддержка сайта? Ваша команда не успевает справиться самостоятельно или предыдущий подрядчик не справился с работой? Тогда вам точно к нам! Просто оставьте заявку и наш менеджер с вами свяжется!</p>
-                    <p>8 800 222-26-73</p>
-                    <p>info@drupal-coder.ru</p>
-                    
-                    <!-- ИП: Кнопка для открытия формы -->
-                    <button id="openFormBtn" class="btn-submit">Связаться с нами</button>
-                </div>
-
-                <!-- ИП: Модальное окно формы -->
-                <div class="popup-content" id="popupForm">
-                    <button class="close-btn" id="closeFormBtn">&times;</button>
-                    
-                    <h2 class="form-title">Форма обратной связи</h2>
-                    
-                    <div class="message success" id="successMessage">
-                        Ваше сообщение успешно отправлено!
-                    </div>
-
-                    <div class="message error" id="errorMessage">
-                        Произошла ошибка при отправке. Пожалуйста, попробуйте еще раз.
-                    </div>
-
-                    <form id="feedbackForm">
+                    <form id="orderForm">
                         <div class="form-group">
-                            <label for="fullName">Ваше имя</label>
-                            <input type="text" id="fullName" name="fullName" required>
+                            <label for="name">Ваше имя *</label>
+                            <input type="text" id="name" class="form-control" placeholder="Как к вам обращаться?" required>
                         </div>
-
+                        
                         <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" required>
+                            <label for="phone">Телефон *</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="+7 (___) ___-__-__" required>
                         </div>
-
+                        
                         <div class="form-group">
-                            <label for="phone">Телефон</label>
-                            <input type="tel" id="phone" name="phone">
+                            <label for="bouquet">Выберите букет</label>
+                            <select id="bouquet" class="form-control">
+                                <option value="black-moon">Полуночный сад (4 290 ₽)</option>
+                                <option value="blue-evening">Сияние ночи (5 490 ₽)</option>
+                                <option value="moonlight">Лунные розы (6 850 ₽)</option>
+                                <option value="custom">Индивидуальный ночной букет</option>
+                            </select>
                         </div>
-
+                        
                         <div class="form-group">
-                            <label for="message">Ваш комментарий</label>
-                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Особые пожелания</label>
+                            <textarea id="message" class="form-control" placeholder="Опишите атмосферу, которую хотите создать..."></textarea>
                         </div>
-
-                        <div class="checkbox-group">
-                            <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
-                            <label for="privacyPolicy">Я согласен с <a href="#" target="_blank">политикой обработки персональных данных</a> *</label>
-                        </div>
-
-                        <button type="submit" class="btn-submit" id="submitBtn">Отправить заявку</button>
+                        
+                        <button type="submit" class="btn" style="width: 100%;">Заказать ночную доставку</button>
                     </form>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <!-- Футер -->
     <footer>
         <div class="container">
-            <div class="footer-main">
-                <p>Проект ООО "Инитлаб", Краснодар, Россия</p>
-                <p>Drupal является зарегистрированной тороговой маркой Dries Buytaert</p>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <a href="#" class="footer-logo"><i class="fas fa-moon"></i> LunaFlora</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#catalog">Коллекция</a></li>
+                        <li><a href="#contact">Заказ</a></li>
+                        <li><a href="#contact">Консультация</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 id="contacts">Контакты</h3>
+                    <ul class="footer-links">
+                        <li>+7 (000) 000-00-00</li>
+                        <li>flower@gmail.com</li>
+                        <li>ул. Какая-то 1</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
-
-    <!-- ИП: Добавлен базовый JavaScript для работы формы -->
-    <script>
-        // Открытие/закрытие модального окна формы
-        document.getElementById('openFormBtn').addEventListener('click', function() {
-            document.getElementById('popupForm').style.display = 'block';
-        });
-        
-        document.getElementById('closeFormBtn').addEventListener('click', function() {
-            document.getElementById('popupForm').style.display = 'none';
-        });
-        
-        // Закрытие по клику вне формы
-        window.addEventListener('click', function(event) {
-            if (event.target === document.getElementById('popupForm')) {
-                document.getElementById('popupForm').style.display = 'none';
-            }
-        });
-    </script>
 </body>
 </html>
