@@ -548,7 +548,6 @@ footer {
         grid-template-columns: 1fr 1fr;
     }
     
-    /* Навигация для планшетов и выше */
     .mobile-menu-btn {
         display: none;
     }
