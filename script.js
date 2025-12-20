@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Слайдер с фиксированными кнопками без анимации при переключении
+    // Слайдер
     const slider = document.getElementById('slider');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
@@ -217,7 +217,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Форма обратной связи с сохранением данных и отправкой без перезагрузки
+    // Форма
     const feedbackForm = document.getElementById('orderForm');
     const STORAGE_KEY = 'feedbackFormData';
     
@@ -433,7 +433,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // ЭКСПОРТ ФУНКЦИЙ В ГЛОБАЛЬНУЮ ОБЛАСТЬ ВИДИМОСТИ
     window.openBurgerMenu = openBurgerMenu;
     window.closeBurgerMenu = closeBurgerMenu;
     window.toggleBurgerMenu = toggleBurgerMenu;
