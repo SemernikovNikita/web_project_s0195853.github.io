@@ -711,8 +711,6 @@ body.menu-open {
     font-size: 3rem;
     font-weight: 700;
     background: linear-gradient(135deg, var(--primary-color), #7e69ab);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     margin-bottom: 10px;
     line-height: 1;
 }
